@@ -13,7 +13,6 @@ def sem_acento(letter):
 
 def get_word_from_list(word): # Seleciona palavra aleatória da lista, e retira os acentos
   word = sem_acento(random.choice(words_list))
-  # word = "WILLIAM"
   word = normalize('NFKD', word).encode('ASCII','ignore').decode('ASCII') 
   return word.upper() 
 
@@ -23,6 +22,7 @@ def play_game(word):
   guessed_letters = []
   win = False
   num_letters_left = len(word)
+  print(emoji.emojize('Python is :thumbs_up:'))
   print("\n\n**================================**\n  Seja vem Vindo ao Jogo da Forca!")
   print('''
               +---+
