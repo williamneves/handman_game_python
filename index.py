@@ -22,7 +22,7 @@ def play_game(word):
   guessed_letters = []
   win = False
   num_letters_left = len(word)
-  print(emoji.emojize('Python is :thumbs_up:'))
+  
   print("\n\n**================================**\n  Seja vem Vindo ao Jogo da Forca!")
   print('''
               +---+
